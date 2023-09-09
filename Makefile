@@ -12,3 +12,5 @@ enter_container:
 
 ejabberd_logs:
 	docker logs -f ejabberd_local
+
+rebuild: down start

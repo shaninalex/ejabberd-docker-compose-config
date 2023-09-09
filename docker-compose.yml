@@ -1,12 +1,14 @@
 version: "3.7"
 
-
+# TODO: connect db volume for backup or configure postgres.
+#
 services:
   ejabberd:
     image: ejabberd/ecs
     container_name: ejabberd_local
     ports:
-      - 5222:5222
-    # volumes:
-    #   - ./config/ejabberd.yml:/etc/ejabberd/conf
+      - 5222:5222 # client to server
+      - 5280:5280 # web console
+    volumes:
+      - ./config/ejabberd.yml:/home/ejabberd/conf/ejabberd.yml
 
