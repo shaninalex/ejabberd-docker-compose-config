@@ -14,3 +14,7 @@ Run without docker compose
 docker run -d --name ejabberd -v ./conf/ejabberd.yml:/home/ejabberd/conf/ejabberd.yml -p 5222:5222 ejabberd/ecs
 ```
 
+## TODO
+- connect other volumes for db, logs etc.
+- use postgres as db
+- create automation scripts to backup

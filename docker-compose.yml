@@ -1,7 +1,5 @@
 version: "3.7"
 
-# TODO: connect db volume for backup or configure postgres.
-#
 services:
   ejabberd:
     image: ejabberd/ecs
